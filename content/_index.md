@@ -1,24 +1,39 @@
 ---
-title: "Session Management"
+title: "Báo cáo thực tập"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 ---
 
-# Work with Amazon System Manager - Session Manager
+# Báo cáo thực tập
+### Thông tin sinh viên:
+&emsp; **Họ và tên:** Nguyễn Văn A
 
-### Overall
+&emsp; **Số điện thoại:** 0989888999 
 
-In this lab, you'll learn the basics and practice of Amazon System Manager - Session Manager
-. Perform creating public and private instance connections.
+&emsp; **Email:** Anguyenvan@gmail.com
 
-![ConnectPrivate](/images/arc-log.png)
+&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
 
-### Content
+&emsp; **Ngành:** Công nghệ thông tin
 
-1.  [Introduction ](1-introduce/)
-2.  [Preparation](2-prerequiste/)
-3.  [Connect to EC2 instance](3-accessibilitytoinstances/)
-4.  [Manage session logs](4-s3log/)
-5.  [Port Forwarding](5-Portfwd/)
-6.  [Clean up resources](6-cleanup/)
+&emsp; **Lớp:** AWS082025
+
+&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+
+&emsp; **Vị trí thực tập:** FCJ Cloud Intern
+
+&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+
+![Ảnh đại diện của bạn](/images/avatar.jpg)
+
+
+
+### Nội dung báo cáo
+
+1.  [Worklog](1-Worklog/)
+2.  [Proposal](2-Proposal/)
+3.  [Các bài blogs đã dịch](3-BlogsTranslated/)
+4.  [Các events đã tham gia](4-EventParticipated/)
+5.  [Workshop](5-Workshop/)
+6.  [Tự đánh giá](6-Self-evaluation/)
