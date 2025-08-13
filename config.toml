@@ -22,7 +22,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "AWS System Manager"
+title = "Internship Report"
 weight = 1
 languageName = "English"
 
@@ -33,7 +33,7 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "AWS System Manager"
+title = "Báo cáo thực tập"
 weight = 2
 languageName = "Tiếng Việt"
 
