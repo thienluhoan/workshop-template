@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>On-premises DNS Simulation on Internship Report</title>
+    <link>https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/</link>
+    <description>Recent content in On-premises DNS Simulation on Internship Report</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
