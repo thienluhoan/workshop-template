@@ -15,21 +15,21 @@
     <title>Create a gateway endpoint :: Internship Report</title>
 
     
-    <link href="../../../css/nucleus.css?1755105444" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1755105444" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1755105444" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1755105444" rel="stylesheet">
-    <link href="../../../css/theme.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1755105444" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1755154973" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1755154973" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1755154973" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1755154973" rel="stylesheet">
+    <link href="../../../css/theme.css?1755154973" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1755154973" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1755105444" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1755154973" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1755105444"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1755154973"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1755105444"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1755154973"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1755154973"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/search.js?1755154973"></script>
  
   </div>
 
@@ -562,7 +562,7 @@
             
 <li
   data-nav-id="/5-workshop/5.1-workshop-overview/"
-  title="Introduction"
+  title="Giới thiệu"
   class="dd-item 
         
         
@@ -570,7 +570,7 @@
         "
 >
   <a href="../../../5-workshop/5.1-workshop-overview/">
-     <b> 5.1. </b> Introduction 
+     <b> 5.1. </b> Giới thiệu 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -580,7 +580,7 @@
             
 <li
   data-nav-id="/5-workshop/5.2-prerequiste/"
-  title="Prerequiste"
+  title="Các bước chuẩn bị"
   class="dd-item 
         
         
@@ -588,7 +588,7 @@
         "
 >
   <a href="../../../5-workshop/5.2-prerequiste/">
-     <b> 5.2. </b> Prerequiste 
+     <b> 5.2. </b> Các bước chuẩn bị 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -1014,45 +1014,45 @@
 
 
 	<ol>
-<li>Open the <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:">Amazon VPC console</a></li>
-<li>In the navigation pane, choose <strong>Endpoints</strong>, then click <strong>Create Endpoint</strong>:</li>
+<li>Mở <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:">Amazon VPC console</a></li>
+<li>Trong thanh điều hướng, chọn <strong>Endpoints</strong>, click <strong>Create Endpoint</strong>:</li>
 </ol>
 
 <div
   class="notices note"
   
 >
-  <p>You will see <strong>6 existing VPC endpoints</strong> that support <strong>AWS Systems Manager (SSM)</strong>. These endpoints were deployed automatically by the <strong>CloudFormation Templates</strong> for this workshop.</p>
+  <p>Bạn sẽ thấy 6 điểm cuối VPC hiện có hỗ trợ AWS Systems Manager (SSM). Các điểm cuối này được Mẫu CloudFormation triển khai tự động cho workshop này.</p>
 
 </div>
 
-<p><img alt="endpoint" src="../../../images/s3-vpc/endpoints.png?featherlight=false&width=90pc"></p>
+<p><img alt="endpoint" src="../../../images/5-Workshop/5.3-S3-vpc/endpoints.png"></p>
 <ol start="3">
-<li>In the Create endpoint console:</li>
+<li>Trong Create endpoint console:</li>
 </ol>
 <ul>
-<li>Specify name of the endpoint: <code>s3-gwe</code></li>
-<li>In service category, choose <strong>AWS services</strong></li>
+<li>Đặt tên cho endpoint: s3-gwe</li>
+<li>Trong service category, chọn <strong>aws services</strong></li>
 </ul>
-<p><img alt="endpoint" src="../../../images/s3-vpc/create-s3-gwe1.png?featherlight=false&width=90pc"></p>
+<p><img alt="endpoint" src="../../../images/5-Workshop/5.3-S3-vpc/create-s3-gwe1.png"></p>
 <ul>
-<li>In <strong>Services</strong>, type <code>s3</code> in the search box and choose the service with type <strong>gateway</strong></li>
+<li>Trong <strong>Services</strong>, gõ &ldquo;s3&rdquo; trong hộp tìm kiếm và chọn dịch vụ với loại <strong>gateway</strong></li>
 </ul>
-<p><img alt="endpoint" src="../../../images/s3-vpc/services.png?featherlight=false&width=90pc"></p>
+<p><img alt="endpoint" src="../../../images/5-Workshop/5.3-S3-vpc/services.png"></p>
 <ul>
-<li>For VPC, select <strong>VPC Cloud</strong> from the drop-down.</li>
-<li>For <strong>Configure route tables</strong>, select the route table that is already associated with <strong>two subnets</strong> (note: this is not the main route table for the VPC, but a second route table created by CloudFormation).</li>
+<li>Đối với VPC, chọn <strong>VPC Cloud</strong> từ drop-down menu.</li>
+<li>Đối với Route tables, chọn bảng định tuyến mà đã liên kết với 2 subnets (lưu ý: đây không phải là bảng định tuyến chính cho VPC mà là bảng định tuyến thứ hai do CloudFormation tạo).</li>
 </ul>
-<p><img alt="endpoint" src="../../../images/s3-vpc/vpc.png?featherlight=false&width=90pc"></p>
+<p><img alt="endpoint" src="../../../images/5-Workshop/5.3-S3-vpc/vpc.png"></p>
 <ul>
-<li><strong>For Policy</strong>, leave the default option, <strong>Full Access</strong>, to allow full access to the service. You will deploy <strong>a VPC endpoint policy</strong> in a later lab module to demonstrate restricting access to <strong>S3 buckets</strong> based on policies.</li>
+<li>Đối với Policy, để tùy chọn mặc định là Full access để cho phép toàn quyền truy cập vào dịch vụ. Bạn sẽ triển khai VPC endpoint policy trong phần sau để chứng minh việc hạn chế quyền truy cập vào S3 bucket dựa trên các policies.</li>
 </ul>
-<p><img alt="endpoint" src="../../../images/s3-vpc/policy.png?featherlight=false&width=90pc"></p>
+<p><img alt="endpoint" src="../../../images/5-Workshop/5.3-S3-vpc/policy.png"></p>
 <ul>
-<li>Do not add a tag to the VPC endpoint at this time.</li>
-<li>Click <strong>Create endpoint</strong>, then click x after receiving a successful creation message.</li>
+<li>Không thêm tag vào VPC endpoint.</li>
+<li>Click Create endpoint, click x sau khi nhận được thông báo tạo thành công.</li>
 </ul>
-<p><img alt="endpoint" src="../../../images/s3-vpc/complete.png?featherlight=false&width=90pc"></p>
+<p><img alt="endpoint" src="../../../images/5-Workshop/5.3-S3-vpc/complete.png"></p>
 
 
 
@@ -1758,19 +1758,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755105444"></script>
-    <script src="../../../js/jquery.sticky.js?1755105444"></script>
-    <script src="../../../js/featherlight.min.js?1755105444"></script>
-    <script src="../../../js/highlight.pack.js?1755105444"></script>
+    <script src="../../../js/clipboard.min.js?1755154973"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1755154973"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755154973"></script>
+    <script src="../../../js/jquery.sticky.js?1755154973"></script>
+    <script src="../../../js/featherlight.min.js?1755154973"></script>
+    <script src="../../../js/highlight.pack.js?1755154973"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1755105444"></script>
-    <script src="../../../js/learn.js?1755105444"></script>
-    <script src="../../../js/hugo-learn.js?1755105444"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1755154973"></script>
+    <script src="../../../js/learn.js?1755154973"></script>
+    <script src="../../../js/hugo-learn.js?1755154973"></script>
 
-    <link href="../../../mermaid/mermaid.css?1755105444" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1755105444"></script>
+    <link href="../../../mermaid/mermaid.css?1755154973" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1755154973"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

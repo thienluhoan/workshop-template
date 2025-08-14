@@ -15,21 +15,21 @@
     <title>VPC Endpoint Policies :: Báo cáo thực tập</title>
 
     
-    <link href="../../../css/nucleus.css?1755105444" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1755105444" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1755105444" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1755105444" rel="stylesheet">
-    <link href="../../../css/theme.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1755105444" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1755154974" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1755154974" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1755154974" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1755154974" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1755154974" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1755154974" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1755154974" rel="stylesheet">
+    <link href="../../../css/theme.css?1755154974" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1755154974" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1755105444" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1755154974" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1755105444"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1755154974"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1755105444"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1755154974"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1755154974"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/search.js?1755154974"></script>
  
   </div>
 
@@ -1018,22 +1018,22 @@
 	<p>Khi bạn tạo một Interface Endpoint  hoặc cổng, bạn có thể đính kèm một chính sách điểm cuối để kiểm soát quyền truy cập vào dịch vụ mà bạn đang kết nối. Chính sách VPC Endpoint là chính sách tài nguyên IAM mà bạn đính kèm vào điểm cuối. Nếu bạn không đính kèm chính sách khi tạo điểm cuối, thì AWS sẽ đính kèm chính sách mặc định cho bạn để cho phép toàn quyền truy cập vào dịch vụ thông qua điểm cuối.</p>
 <p>Bạn có thể tạo chính sách chỉ hạn chế quyền truy cập vào các S3 bucket cụ thể. Điều này hữu ích nếu bạn chỉ muốn một số Bộ chứa S3 nhất định có thể truy cập được thông qua điểm cuối.</p>
 <p>Trong phần này, bạn sẽ tạo chính sách VPC Endpoint hạn chế quyền truy cập vào S3 bucket được chỉ định trong chính sách VPC Endpoint.</p>
-<p><img alt="endpoint diagram" src="../../../images/5-policy/s3-bucket-policy.png?featherlight=false&width=90pc"></p>
+<p><img alt="endpoint diagram" src="../../../images/5-Workshop/5.5-Policy/s3-bucket-policy.png"></p>
 <h4 id="kết-nối-tới-ec2-và-xác-minh-kết-nối-tới-s3">Kết nối tới EC2 và xác minh kết nối tới S3.</h4>
 <ol>
 <li>Bắt đầu một phiên AWS Session Manager mới trên máy chủ có tên là Test-Gateway-Endpoint. Từ phiên này, xác minh rằng bạn có thể liệt kê nội dung của bucket mà bạn đã tạo trong Phần 1: Truy cập S3 từ VPC.</li>
 </ol>
 <pre tabindex="0"><code>aws s3 ls s3://&lt;your-bucket-name&gt;
-</code></pre><p><img alt="test" src="../../../images/5-policy/test1.png?featherlight=false&width=90pc"></p>
+</code></pre><p><img alt="test" src="../../../images/5-Workshop/5.5-Policy/test1.png"></p>
 <p>Nội dung của bucket bao gồm hai tệp có dung lượng 1GB đã được tải lên trước đó.</p>
 <ol start="2">
 <li>Tạo một bucket S3 mới; tuân thủ mẫu đặt tên mà bạn đã sử dụng trong Phần 1, nhưng thêm &lsquo;-2&rsquo; vào tên. Để các trường khác là mặc định và nhấp vào <strong>Create</strong>.</li>
 </ol>
-<p><img alt="create bucket" src="../../../images/5-policy/create-bucket.png?featherlight=false&width=90pc"></p>
+<p><img alt="create bucket" src="../../../images/5-Workshop/5.5-Policy/create-bucket.png"></p>
 <ol start="3">
 <li>Tạo bucket thành công.</li>
 </ol>
-<p><img alt="Success" src="../../../images/5-policy/create-bucket-success.png?featherlight=false&width=90pc"></p>
+<p><img alt="Success" src="../../../images/5-Workshop/5.5-Policy/create-bucket-success.png"></p>
 <p>Policy mặc định cho phép truy cập vào tất cả các S3 Buckets thông qua VPC endpoint.</p>
 <ol start="4">
 <li>Trong giao diện <strong>Edit Policy</strong>, sao chép và dán theo policy sau, thay thế yourbucketname-2 với tên bucket thứ hai của bạn. Policy này sẽ cho phép truy cập đến bucket mới thông qua VPC endpoint, nhưng không cho phép truy cập đến các bucket còn lại. Chọn <strong>Save</strong> để kích hoạt policy.</li>
@@ -1054,15 +1054,15 @@
     }
   ]
 }
-</code></pre><p><img alt="custom policy" src="../../../images/5-policy/policy2.png?featherlight=false&width=90pc"></p>
+</code></pre><p><img alt="custom policy" src="../../../images/5-Workshop/5.5-Policy/policy2.png"></p>
 <p>Cấu hình policy thành công.</p>
-<p><img alt="success" src="../../../images/5-policy/success.png?featherlight=false&width=90pc"></p>
+<p><img alt="success" src="../../../images/5-Workshop/5.5-Policy/success.png"></p>
 <ol start="5">
 <li>Từ session của bạn trên Test-Gateway-Endpoint instance, kiểm tra truy cập đến S3 bucket bạn tạo ở bước đầu</li>
 </ol>
 <pre tabindex="0"><code>aws s3 ls s3://&lt;yourbucketname&gt;
 </code></pre><p>Câu lệnh trả về lỗi bởi vì truy cập vào S3 bucket không có quyền trong VPC endpoint policy.</p>
-<p><img alt="error" src="../../../images/5-policy/error.png?featherlight=false&width=90pc"></p>
+<p><img alt="error" src="../../../images/5-Workshop/5.5-Policy/error.png"></p>
 <ol start="6">
 <li>Trở lại home directory của bạn trên EC2 instance <code>cd~</code></li>
 </ol>
@@ -1070,12 +1070,12 @@
 <li>Tạo file <code>fallocate -l 1G test-bucket2.xyz </code></li>
 <li>Sao chép file lên bucket thứ  2 <code>aws s3 cp test-bucket2.xyz s3://&lt;your-2nd-bucket-name&gt;</code></li>
 </ul>
-<p><img alt="success" src="../../../images/5-policy/test2.png?featherlight=false&width=90pc"></p>
+<p><img alt="success" src="../../../images/5-Workshop/5.5-Policy/test2.png"></p>
 <p>Thao tác này được cho phép bởi VPC endpoint policy.</p>
-<p><img alt="success" src="../../../images/5-policy/test2-success.png?featherlight=false&width=90pc"></p>
+<p><img alt="success" src="../../../images/5-Workshop/5.5-Policy/test2-success.png"></p>
 <p>Sau đó chúng ta kiểm tra truy cập vào S3 bucket đầu tiên</p>
 <p><code>aws s3 cp test-bucket2.xyz s3://&lt;your-1st-bucket-name&gt;</code></p>
-<p><img alt="fail" src="../../../images/5-policy/test2-fail.png?featherlight=false&width=90pc"></p>
+<p><img alt="fail" src="../../../images/5-Workshop/5.5-Policy/test2-fail.png"></p>
 <p>Câu lệnh xảy ra lỗi bởi vì bucket không có quyền truy cập bởi VPC endpoint policy.</p>
 <p>Trong phần này, bạn đã tạo chính sách VPC Endpoint cho Amazon S3 và sử dụng AWS CLI để kiểm tra chính sách. Các hoạt động AWS CLI liên quan đến bucket S3 ban đầu của bạn thất bại vì bạn áp dụng một chính sách chỉ cho phép truy cập đến bucket thứ hai mà bạn đã tạo. Các hoạt động AWS CLI nhắm vào bucket thứ hai của bạn thành công vì chính sách cho phép chúng. Những chính sách này có thể hữu ích trong các tình huống khi bạn cần kiểm soát quyền truy cập vào tài nguyên thông qua VPC Endpoint.</p>
 
@@ -1782,19 +1782,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755105444"></script>
-    <script src="../../../js/jquery.sticky.js?1755105444"></script>
-    <script src="../../../js/featherlight.min.js?1755105444"></script>
-    <script src="../../../js/highlight.pack.js?1755105444"></script>
+    <script src="../../../js/clipboard.min.js?1755154974"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1755154974"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755154974"></script>
+    <script src="../../../js/jquery.sticky.js?1755154974"></script>
+    <script src="../../../js/featherlight.min.js?1755154974"></script>
+    <script src="../../../js/highlight.pack.js?1755154974"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1755105444"></script>
-    <script src="../../../js/learn.js?1755105444"></script>
-    <script src="../../../js/hugo-learn.js?1755105444"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1755154974"></script>
+    <script src="../../../js/learn.js?1755154974"></script>
+    <script src="../../../js/hugo-learn.js?1755154974"></script>
 
-    <link href="../../../mermaid/mermaid.css?1755105444" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1755105444"></script>
+    <link href="../../../mermaid/mermaid.css?1755154974" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1755154974"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -15,21 +15,21 @@
     <title>Mô phỏng On-premises DNS  :: Báo cáo thực tập</title>
 
     
-    <link href="../../../../css/nucleus.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/fontawesome-all.min.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/hybrid.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/atom-one-dark-reasonable.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/theme.css?1755105444" rel="stylesheet">
-    <link href="../../../../css/hugo-theme.css?1755105444" rel="stylesheet">
+    <link href="../../../../css/nucleus.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/fontawesome-all.min.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/hybrid.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/atom-one-dark-reasonable.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/theme.css?1755154974" rel="stylesheet">
+    <link href="../../../../css/hugo-theme.css?1755154974" rel="stylesheet">
     
-    <link href="../../../../css/theme-workshop.css?1755105444" rel="stylesheet">
+    <link href="../../../../css/theme-workshop.css?1755154974" rel="stylesheet">
     
     
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1755105444"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1755154974"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../../js/lunr.min.js?1755105444"></script>
-<script type="text/javascript" src="../../../../js/auto-complete.js?1755105444"></script>
+<script type="text/javascript" src="../../../../js/lunr.min.js?1755154974"></script>
+<script type="text/javascript" src="../../../../js/auto-complete.js?1755154974"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../../../js/search.js?1755105444"></script>
+<script type="text/javascript" src="../../../../js/search.js?1755154974"></script>
  
   </div>
 
@@ -1027,11 +1027,11 @@
 <ol>
 <li>Click link để đi đến <a href="https://us-east-1.console.aws.amazon.com/route53/v2/hostedzones?region=us-east-1">Route 53 management console</a> (Hosted Zones section).  Mẫu CloudFormation mà bạn triển khai trong phần Chuẩn bị môi trường đã tạo Private Hosted Zone này. Nhấp vào tên của Private Hosted Zone, s3.us-east-1.amazonaws.com:</li>
 </ol>
-<p><img alt="hosted zone" src="../../../../images/4-onprem/hosted-zone.png?featherlight=false&width=90pc"></p>
+<p><img alt="hosted zone" src="../../../../images/5-Workshop/5.4-S3-onprem/hosted-zone.png"></p>
 <ol start="2">
 <li>Tạo 1 record mới trong Private Hosted Zone:</li>
 </ol>
-<p><img alt="Create record" src="../../../../images/4-onprem/create-record1.png?featherlight=false&width=90pc"></p>
+<p><img alt="Create record" src="../../../../images/5-Workshop/5.4-S3-onprem/create-record1.png"></p>
 <ul>
 <li>Giữ nguyên Record name và record type</li>
 <li>Alias Button: click để enable</li>
@@ -1039,7 +1039,7 @@
 <li>Region: US East (N. Virginia) [us-east-1]</li>
 <li>Chọn endpoint: Paste tên (Regional VPC Endpoint DNS) bạn đã lưu lại ở phần 4.3</li>
 </ul>
-<p><img alt="record1" src="../../../../images/4-onprem/record1.png?featherlight=false&width=90pc"></p>
+<p><img alt="record1" src="../../../../images/5-Workshop/5.4-S3-onprem/record1.png"></p>
 <ol start="3">
 <li>Click Add another record, và add 1 cái record thứ 2 sử dụng những thông số sau:</li>
 </ol>
@@ -1052,9 +1052,9 @@
 <li>Chọn endpoint: Paste tên (Regional VPC Endpoint DNS) bạn đã lưu lại ở phần 4.3</li>
 <li>Click <strong>Create records</strong></li>
 </ul>
-<p><img alt="record 2" src="../../../../images/4-onprem/record2.png?featherlight=false&width=90pc"></p>
+<p><img alt="record 2" src="../../../../images/5-Workshop/5.4-S3-onprem/record2.png"></p>
 <p>Record mới xuất hiện trên giao diện Route 53.</p>
-<p><img alt="result" src="../../../../images/4-onprem/result.png?featherlight=false&width=90pc"></p>
+<p><img alt="result" src="../../../../images/5-Workshop/5.4-S3-onprem/result.png"></p>
 <h4 id="tạo-một-resolver-forwarding-rule">Tạo một Resolver Forwarding Rule</h4>
 <p><strong>Route 53 Resolver Forwarding Rules</strong> cho phép bạn chuyển tiếp các DNS queries từ VPC của bạn đến các nguồn khác để resolve name. Bên ngoài môi trường workshop, bạn có thể sử dụng tính năng này để chuyển tiếp các DNS queries từ VPC của bạn đến các máy chủ DNS chạy trên on-premises. Trong phần này, bạn sẽ mô phỏng một on-premises conditional forwarder bằng cách tạo một forwarding rule để chuyển tiếp các DNS queries for Amazon S3 đến một Private Hosted Zone chạy trong &ldquo;VPC Cloud&rdquo; để resolve PrivateLink interface endpoint regional DNS name.</p>
 <ol>
@@ -1065,15 +1065,15 @@
 <p>Trong giao diện <strong>Inbound endpoint</strong>, Chọn ID của Inbound endpoint.</p>
 </li>
 </ol>
-<p><img alt="Inbound endpoint" src="../../../../images/4-onprem/route53-1.png?featherlight=false&width=90pc"></p>
+<p><img alt="Inbound endpoint" src="../../../../images/5-Workshop/5.4-S3-onprem/route53-1.png"></p>
 <ol start="3">
 <li>Sao chép 2 địa chỉ IP trong danh sách vào trình chỉnh sửa.</li>
 </ol>
-<p><img alt="Ip addresses" src="../../../../images/4-onprem/route53-2.png?featherlight=false&width=90pc"></p>
+<p><img alt="Ip addresses" src="../../../../images/5-Workshop/5.4-S3-onprem/route53-2.png"></p>
 <ol start="4">
 <li>Từ giao diện Route 53, chọn  <strong>Resolver</strong> &gt; <strong>Rules</strong> và chọn <strong>Create rule</strong></li>
 </ol>
-<p><img alt="Ip addresses" src="../../../../images/4-onprem/route53-3.png?featherlight=false&width=90pc"></p>
+<p><img alt="Ip addresses" src="../../../../images/5-Workshop/5.4-S3-onprem/route53-3.png"></p>
 <ol start="5">
 <li>Trong giao diện <strong>Create rule</strong></li>
 </ol>
@@ -1082,23 +1082,23 @@
 <li>Rule type: Forward</li>
 <li>Domain name: s3.us-east-1.amazonaws.com</li>
 </ul>
-<p><img alt="create rule" src="../../../../images/4-onprem/route53-4.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/route53-4.png"></p>
 <ul>
 <li>VPC: VPC On-prem</li>
 <li>Outbound endpoint: VPCOnpremOutboundEndpoint</li>
 </ul>
-<p><img alt="create rule" src="../../../../images/4-onprem/route53-5.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/route53-5.png"></p>
 <ul>
 <li>Target IP Addresses: điền cả hai IP bạn đã lưu trữ trên trình soạn thảo (inbound endpoint addresses) và sau đó chọn <strong>Submit</strong></li>
 </ul>
-<p><img alt="create rule" src="../../../../images/4-onprem/route53-6.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/route53-6.png"></p>
 <p>Bạn đã tạo thành công resolver forwarding rule.</p>
-<p><img alt="create rule" src="../../../../images/4-onprem/route53-7.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/route53-7.png"></p>
 <h4 id="kiểm-tra-on-premises-dns-mô-phỏng">Kiểm tra on-premises DNS mô phỏng.</h4>
 <ol>
 <li>Kết nối đến <strong>Test-Interface-Endpoint EC2 instance</strong> với <strong>Session Manager</strong></li>
 </ol>
-<p><img alt="create rule" src="../../../../images/4-onprem/test1.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/test1.png"></p>
 <ol start="2">
 <li>Kiểm tra DNS resolution. Lệnh dig sẽ trả về địa chỉ IP được gán cho VPC endpoint interface đang chạy trên VPC (địa chỉ IP của bạn sẽ khác):</li>
 </ol>
@@ -1112,20 +1112,20 @@
 
 </div>
 
-<p><img alt="create rule" src="../../../../images/4-onprem/dig.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/dig.png"></p>
 <ol start="3">
 <li>Truy cập vào menu VPC (phần Endpoints), chọn S3 interface endpoint. Nhấp vào tab Subnets và xác nhận rằng các địa chỉ IP được trả về bởi lệnh Dig khớp với VPC endpoint:</li>
 </ol>
-<p><img alt="create rule" src="../../../../images/4-onprem/subnet.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/subnet.png"></p>
 <ol start="4">
 <li>Hãy quay lại shell của bạn và sử dụng AWS CLI để kiểm tra danh sách các bucket S3 của bạn:</li>
 </ol>
 <pre tabindex="0"><code>aws s3 ls --endpoint-url https://s3.us-east-1.amazonaws.com
-</code></pre><p><img alt="create rule" src="../../../../images/4-onprem/endpoint.png?featherlight=false&width=90pc"></p>
+</code></pre><p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/endpoint.png"></p>
 <ol start="5">
 <li>Kết thúc phiên làm việc của Session Manager của bạn:</li>
 </ol>
-<p><img alt="create rule" src="../../../../images/4-onprem/terminal.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../../images/5-Workshop/5.4-S3-onprem/terminal.png"></p>
 <p>Trong phần này, bạn đã tạo một  <strong>Interface Endpoint</strong>  cho Amazon S3. Điểm cuối này có thể được truy cập từ on-premises thông qua Site-to-Site VPN hoặc AWS Direct Connect. Các điểm cuối Route 53 Resolver outbound giả lập chuyển tiếp các yêu cầu DNS từ on-premises đến một Private Hosted Zone đang chạy trên đám mây. Các điểm cuối Route 53 inbound nhận yêu cầu giải quyết và trả về một phản hồi chứa địa chỉ IP của  <strong>Interface Endpoint</strong>  VPC. Sử dụng DNS để giải quyết các địa chỉ IP của điểm cuối cung cấp tính sẵn sàng cao trong trường hợp một Availability Zone gặp sự cố.</p>
 
 
@@ -1835,19 +1835,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1755105444"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1755105444"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1755105444"></script>
-    <script src="../../../../js/jquery.sticky.js?1755105444"></script>
-    <script src="../../../../js/featherlight.min.js?1755105444"></script>
-    <script src="../../../../js/highlight.pack.js?1755105444"></script>
+    <script src="../../../../js/clipboard.min.js?1755154974"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1755154974"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1755154974"></script>
+    <script src="../../../../js/jquery.sticky.js?1755154974"></script>
+    <script src="../../../../js/featherlight.min.js?1755154974"></script>
+    <script src="../../../../js/highlight.pack.js?1755154974"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1755105444"></script>
-    <script src="../../../../js/learn.js?1755105444"></script>
-    <script src="../../../../js/hugo-learn.js?1755105444"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1755154974"></script>
+    <script src="../../../../js/learn.js?1755154974"></script>
+    <script src="../../../../js/hugo-learn.js?1755154974"></script>
 
-    <link href="../../../../mermaid/mermaid.css?1755105444" rel="stylesheet" />
-    <script src="../../../../mermaid/mermaid.js?1755105444"></script>
+    <link href="../../../../mermaid/mermaid.css?1755154974" rel="stylesheet" />
+    <script src="../../../../mermaid/mermaid.js?1755154974"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

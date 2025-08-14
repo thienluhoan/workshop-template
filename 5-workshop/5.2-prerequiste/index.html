@@ -12,24 +12,24 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Prerequiste :: Internship Report</title>
+    <title>Các bước chuẩn bị :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1755105444" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1755105444" rel="stylesheet">
-    <link href="../../css/hybrid.css?1755105444" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1755105444" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1755105444" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1755105444" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1755105444" rel="stylesheet">
-    <link href="../../css/theme.css?1755105444" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1755105444" rel="stylesheet">
+    <link href="../../css/nucleus.css?1755154973" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1755154973" rel="stylesheet">
+    <link href="../../css/hybrid.css?1755154973" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1755154973" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1755154973" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1755154973" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1755154973" rel="stylesheet">
+    <link href="../../css/theme.css?1755154973" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1755154973" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1755105444" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1755154973" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1755105444"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1755154973"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1755105444"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1755105444"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1755154973"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1755154973"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1755105444"></script>
+<script type="text/javascript" src="../../js/search.js?1755154973"></script>
  
   </div>
 
@@ -562,7 +562,7 @@
             
 <li
   data-nav-id="/5-workshop/5.1-workshop-overview/"
-  title="Introduction"
+  title="Giới thiệu"
   class="dd-item 
         
         
@@ -570,7 +570,7 @@
         "
 >
   <a href="../../5-workshop/5.1-workshop-overview/">
-     <b> 5.1. </b> Introduction 
+     <b> 5.1. </b> Giới thiệu 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -580,7 +580,7 @@
             
 <li
   data-nav-id="/5-workshop/5.2-prerequiste/"
-  title="Prerequiste"
+  title="Các bước chuẩn bị"
   class="dd-item 
         
         active
@@ -588,7 +588,7 @@
         "
 >
   <a href="../../5-workshop/5.2-prerequiste/">
-     <b> 5.2. </b> Prerequiste 
+     <b> 5.2. </b> Các bước chuẩn bị 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -972,7 +972,7 @@
             
           
           
-            <a href='../../'>Báo cáo thực tập</a> > <a href='../../5-workshop/'>Workshop</a> > Prerequiste
+            <a href='../../'>Báo cáo thực tập</a> > <a href='../../5-workshop/'>Workshop</a> > Các bước chuẩn bị
           
         
           
@@ -1007,7 +1007,7 @@
           
             <h1>
               
-              Prerequiste
+              Các bước chuẩn bị
             </h1>
           
 
@@ -1016,7 +1016,7 @@
 
 
 	<h4 id="iam-permissions">IAM permissions</h4>
-<p>Add the following IAM permission policy to your user account to deploy and cleanup this workshop.</p>
+<p>Gắn IAM permission policy sau vào tài khoản aws user của bạn để triển khai và dọn dẹp tài nguyên trong workshop này.</p>
 <pre tabindex="0"><code>{
     &#34;Version&#34;: &#34;2012-10-17&#34;,
     &#34;Statement&#34;: [
@@ -1221,25 +1221,25 @@
         }
     ]
 }
-</code></pre><h4 id="provision-resources-using-cloudformation">Provision resources using CloudFormation</h4>
-<p>In this lab, we will use <strong>N.Virginia region (us-east-1)</strong>.</p>
-<p>To prepare the workshop environment, deploy this <strong>CloudFormation Template</strong> (click link): <a href="https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup">PrivateLinkWorkshop </a>. Accept all of the defaults when deploying the template.</p>
-<p><img alt="create stack" src="../../images/1-prerequisite/create-stack1.png?featherlight=false&width=90pc"></p>
+</code></pre><h4 id="khởi-tạo-tài-nguyên-bằng-cloudformation">Khởi tạo tài nguyên bằng CloudFormation</h4>
+<p>Trong lab này, chúng ta sẽ dùng N.Virginia region (us-east-1).</p>
+<p>Để chuẩn bị cho môi trường làm workshop, chúng ta deploy CloudFormation template sau (click link): <a href="https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup">PrivateLinkWorkshop </a>. Để nguyên các lựa chọn mặc định.</p>
+<p><img alt="create stack" src="../../images/5-Workshop/5.2-Prerequisite/create-stack1.png"></p>
 <ul>
-<li>Tick 2 acknowledgement boxes</li>
-<li>Choose <strong>Create stack</strong></li>
+<li>Lựa chọn 2 mục acknowledgement</li>
+<li>Chọn Create stack</li>
 </ul>
-<p><img alt="create stack" src="../../images/1-prerequisite/create-stack2.png?featherlight=false&width=90pc"></p>
-<p>The <strong>ClouddFormation</strong> deployment requires about 15 minutes to complete.</p>
-<p><img alt="complete" src="../../images/1-prerequisite/complete.png?featherlight=false&width=90pc"></p>
+<p><img alt="create stack" src="../../images/5-Workshop/5.2-Prerequisite/create-stack2.png"></p>
+<p>Quá trình triển khai CloudFormation cần khoảng 15 phút để hoàn thành.</p>
+<p><img alt="complete" src="../../images/5-Workshop/5.2-Prerequisite/complete.png"></p>
 <ul>
-<li><strong>2 VPCs</strong> have been created</li>
+<li>2 VPCs đã được tạo</li>
 </ul>
-<p><img alt="vpcs" src="../../images/1-prerequisite/vpcs.png?featherlight=false&width=90pc"></p>
+<p><img alt="vpcs" src="../../images/5-Workshop/5.2-Prerequisite/vpcs.png"></p>
 <ul>
-<li><strong>3 EC2s</strong> have been created</li>
+<li>3 EC2s đã được tạo</li>
 </ul>
-<p><img alt="EC2" src="../../images/1-prerequisite/ec2.png?featherlight=false&width=90pc"></p>
+<p><img alt="EC2" src="../../images/5-Workshop/5.2-Prerequisite/ec2.png"></p>
 
 
 
@@ -1931,7 +1931,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../5-workshop/5.1-workshop-overview/" title="Introduction"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../5-workshop/5.1-workshop-overview/" title="Giới thiệu"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="../../5-workshop/5.3-s3-vpc/" title="Access S3 from VPC" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1944,19 +1944,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1755105444"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1755105444"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1755105444"></script>
-    <script src="../../js/jquery.sticky.js?1755105444"></script>
-    <script src="../../js/featherlight.min.js?1755105444"></script>
-    <script src="../../js/highlight.pack.js?1755105444"></script>
+    <script src="../../js/clipboard.min.js?1755154973"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1755154973"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1755154973"></script>
+    <script src="../../js/jquery.sticky.js?1755154973"></script>
+    <script src="../../js/featherlight.min.js?1755154973"></script>
+    <script src="../../js/highlight.pack.js?1755154973"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1755105444"></script>
-    <script src="../../js/learn.js?1755105444"></script>
-    <script src="../../js/hugo-learn.js?1755105444"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1755154973"></script>
+    <script src="../../js/learn.js?1755154973"></script>
+    <script src="../../js/hugo-learn.js?1755154973"></script>
 
-    <link href="../../mermaid/mermaid.css?1755105444" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1755105444"></script>
+    <link href="../../mermaid/mermaid.css?1755154973" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1755154973"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

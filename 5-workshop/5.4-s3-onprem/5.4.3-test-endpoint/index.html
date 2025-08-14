@@ -15,21 +15,21 @@
     <title>Test the Interface Endpoint :: Internship Report</title>
 
     
-    <link href="../../../css/nucleus.css?1755105444" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1755105444" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1755105444" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1755105444" rel="stylesheet">
-    <link href="../../../css/theme.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1755105444" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1755154973" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1755154973" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1755154973" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1755154973" rel="stylesheet">
+    <link href="../../../css/theme.css?1755154973" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1755154973" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1755105444" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1755154973" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1755105444"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1755154973"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1755105444"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1755154973"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1755154973"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/search.js?1755154973"></script>
  
   </div>
 
@@ -562,7 +562,7 @@
             
 <li
   data-nav-id="/5-workshop/5.1-workshop-overview/"
-  title="Introduction"
+  title="Giới thiệu"
   class="dd-item 
         
         
@@ -570,7 +570,7 @@
         "
 >
   <a href="../../../5-workshop/5.1-workshop-overview/">
-     <b> 5.1. </b> Introduction 
+     <b> 5.1. </b> Giới thiệu 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -580,7 +580,7 @@
             
 <li
   data-nav-id="/5-workshop/5.2-prerequiste/"
-  title="Prerequiste"
+  title="Các bước chuẩn bị"
   class="dd-item 
         
         
@@ -588,7 +588,7 @@
         "
 >
   <a href="../../../5-workshop/5.2-prerequiste/">
-     <b> 5.2. </b> Prerequiste 
+     <b> 5.2. </b> Các bước chuẩn bị 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -1030,7 +1030,7 @@
 <p>Click the name of newly created endpoint: s3-interface-endpoint. Click details and save the regional DNS name of the endpoint (the first one) to your text-editor for later use.</p>
 </li>
 </ol>
-<p><img alt="dns name" src="../../../images/4-onprem/dns.png?featherlight=false&width=90pc"></p>
+<p><img alt="dns name" src="../../../images/5-Workshop/5.4-S3-onprem/dns.png"></p>
 <h4 id="connect-to-ec2-instance-in-vpc-on-prem">Connect to EC2 instance in &ldquo;VPC On-prem&rdquo;</h4>
 <ol>
 <li>
@@ -1040,7 +1040,7 @@
 <p>Click <strong>Start Session</strong>, and select the EC2 instance named <strong>Test-Interface-Endpoint</strong>. This EC2 instance is running in &ldquo;VPC On-prem&rdquo; and will be used to test connectivty to Amazon S3 through the Interface endpoint we just created. Session Manager will open a new browser tab with a shell prompt: <strong>sh-4.2 $</strong></p>
 </li>
 </ol>
-<p><img alt="Start session" src="../../../images/4-onprem/start-session.png?featherlight=false&width=90pc"></p>
+<p><img alt="Start session" src="../../../images/5-Workshop/5.4-S3-onprem/start-session.png"></p>
 <ol start="3">
 <li>
 <p>Change to the ssm-user&rsquo;s home directory with command &ldquo;cd ~&rdquo;</p>
@@ -1050,7 +1050,7 @@
 </li>
 </ol>
 <pre tabindex="0"><code>fallocate -l 1G testfile2.xyz
-</code></pre><p><img alt="user" src="../../../images/4-onprem/cli1.png?featherlight=false&width=90pc"></p>
+</code></pre><p><img alt="user" src="../../../images/5-Workshop/5.4-S3-onprem/cli1.png"></p>
 <ol start="5">
 <li>Copy file to the same S3 bucket we created in section 3.2</li>
 </ol>
@@ -1060,7 +1060,7 @@
 <li>Do not include the leading &rsquo; * &rsquo; when copying/pasting the regional DNS name.</li>
 <li>Provide your S3 bucket name created earlier</li>
 </ul>
-<p><img alt="copy file" src="../../../images/4-onprem/cli2.png?featherlight=false&width=90pc"></p>
+<p><img alt="copy file" src="../../../images/5-Workshop/5.4-S3-onprem/cli2.png"></p>
 <p>Now the file has been added to your S3 bucket. Let check your S3 bucket in the next step.</p>
 <h4 id="check-object-in-s3-bucket">Check Object in S3 bucket</h4>
 <ol>
@@ -1068,7 +1068,7 @@
 <li>Click Buckets</li>
 <li>Click the name of your bucket and you will see testfile2.xyz has been added to your bucket</li>
 </ol>
-<p><img alt="check bucket" src="../../../images/4-onprem/check-bucket.png?featherlight=false&width=90pc"></p>
+<p><img alt="check bucket" src="../../../images/5-Workshop/5.4-S3-onprem/check-bucket.png"></p>
 
 
 
@@ -1777,19 +1777,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755105444"></script>
-    <script src="../../../js/jquery.sticky.js?1755105444"></script>
-    <script src="../../../js/featherlight.min.js?1755105444"></script>
-    <script src="../../../js/highlight.pack.js?1755105444"></script>
+    <script src="../../../js/clipboard.min.js?1755154973"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1755154973"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755154973"></script>
+    <script src="../../../js/jquery.sticky.js?1755154973"></script>
+    <script src="../../../js/featherlight.min.js?1755154973"></script>
+    <script src="../../../js/highlight.pack.js?1755154973"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1755105444"></script>
-    <script src="../../../js/learn.js?1755105444"></script>
-    <script src="../../../js/hugo-learn.js?1755105444"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1755154973"></script>
+    <script src="../../../js/learn.js?1755154973"></script>
+    <script src="../../../js/hugo-learn.js?1755154973"></script>
 
-    <link href="../../../mermaid/mermaid.css?1755105444" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1755105444"></script>
+    <link href="../../../mermaid/mermaid.css?1755154973" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1755154973"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

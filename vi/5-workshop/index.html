@@ -15,21 +15,21 @@
     <title>Workshop :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1755105444" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1755105444" rel="stylesheet">
-    <link href="../../css/hybrid.css?1755105444" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1755105444" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1755105444" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1755105444" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1755105444" rel="stylesheet">
-    <link href="../../css/theme.css?1755105444" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1755105444" rel="stylesheet">
+    <link href="../../css/nucleus.css?1755154974" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1755154974" rel="stylesheet">
+    <link href="../../css/hybrid.css?1755154974" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1755154974" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1755154974" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1755154974" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1755154974" rel="stylesheet">
+    <link href="../../css/theme.css?1755154974" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1755154974" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1755105444" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1755154974" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1755105444"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1755154974"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1755105444"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1755105444"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1755154974"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1755154974"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1755105444"></script>
+<script type="text/javascript" src="../../js/search.js?1755154974"></script>
  
   </div>
 
@@ -978,7 +978,15 @@
                 </div>
                 
                     <div class="progress">
-  <div class="wrapper"><nav id="TableOfContents"></nav></div>
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
 </div>
 
                 
@@ -1010,6 +1018,24 @@
 
 </div>
 
+<h1 id="đảm-bảo-truy-cập-hybrid-an-toàn-đến-s3-bằng-cách-sử-dụng-vpc-endpoint">Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint</h1>
+<h4 id="tổng-quan">Tổng quan</h4>
+<p><strong>AWS PrivateLink</strong> cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.</p>
+<p>Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.</p>
+<p>Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).</p>
+<ul>
+<li><strong>Gateway</strong> - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)</li>
+<li><strong>Interface</strong> - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.</li>
+</ul>
+<h4 id="nội-dung">Nội dung</h4>
+<ol>
+<li><a href="../../vi/5-workshop/5.1-workshop-overview/">Tổng quan về workshop</a></li>
+<li><a href="../../vi/5-workshop/5.2-prerequiste/">Chuẩn bị</a></li>
+<li><a href="../../vi/5-workshop/5.3-s3-vpc/">Truy cập đến S3 từ VPC</a></li>
+<li><a href="../../vi/5-workshop/5.4-s3-onprem/">Truy cập đến S3 từ TTDL On-premises</a></li>
+<li><a href="../../vi/5-workshop/5.5-policy/">VPC Endpoint Policies (làm thêm)</a></li>
+<li><a href="../../vi/5-workshop/5.6-cleanup/">Dọn dẹp tài nguyên</a></li>
+</ol>
 
 
 
@@ -1710,19 +1736,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1755105444"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1755105444"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1755105444"></script>
-    <script src="../../js/jquery.sticky.js?1755105444"></script>
-    <script src="../../js/featherlight.min.js?1755105444"></script>
-    <script src="../../js/highlight.pack.js?1755105444"></script>
+    <script src="../../js/clipboard.min.js?1755154974"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1755154974"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1755154974"></script>
+    <script src="../../js/jquery.sticky.js?1755154974"></script>
+    <script src="../../js/featherlight.min.js?1755154974"></script>
+    <script src="../../js/highlight.pack.js?1755154974"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1755105444"></script>
-    <script src="../../js/learn.js?1755105444"></script>
-    <script src="../../js/hugo-learn.js?1755105444"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1755154974"></script>
+    <script src="../../js/learn.js?1755154974"></script>
+    <script src="../../js/hugo-learn.js?1755154974"></script>
 
-    <link href="../../mermaid/mermaid.css?1755105444" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1755105444"></script>
+    <link href="../../mermaid/mermaid.css?1755154974" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1755154974"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

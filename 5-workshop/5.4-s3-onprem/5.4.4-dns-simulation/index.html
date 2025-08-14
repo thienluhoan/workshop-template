@@ -15,21 +15,21 @@
     <title>On-premises DNS Simulation :: Internship Report</title>
 
     
-    <link href="../../../css/nucleus.css?1755105444" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1755105444" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1755105444" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1755105444" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1755105444" rel="stylesheet">
-    <link href="../../../css/theme.css?1755105444" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1755105444" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1755154973" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1755154973" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1755154973" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1755154973" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1755154973" rel="stylesheet">
+    <link href="../../../css/theme.css?1755154973" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1755154973" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1755105444" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1755154973" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1755105444"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1755154973"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1755105444"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1755154973"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1755154973"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1755105444"></script>
+<script type="text/javascript" src="../../../js/search.js?1755154973"></script>
  
   </div>
 
@@ -562,7 +562,7 @@
             
 <li
   data-nav-id="/5-workshop/5.1-workshop-overview/"
-  title="Introduction"
+  title="Giới thiệu"
   class="dd-item 
         
         
@@ -570,7 +570,7 @@
         "
 >
   <a href="../../../5-workshop/5.1-workshop-overview/">
-     <b> 5.1. </b> Introduction 
+     <b> 5.1. </b> Giới thiệu 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -580,7 +580,7 @@
             
 <li
   data-nav-id="/5-workshop/5.2-prerequiste/"
-  title="Prerequiste"
+  title="Các bước chuẩn bị"
   class="dd-item 
         
         
@@ -588,7 +588,7 @@
         "
 >
   <a href="../../../5-workshop/5.2-prerequiste/">
-     <b> 5.2. </b> Prerequiste 
+     <b> 5.2. </b> Các bước chuẩn bị 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -1027,11 +1027,11 @@
 <ol>
 <li>Navigate to the <a href="https://us-east-1.console.aws.amazon.com/route53/v2/hostedzones?region=us-east-1">Route 53 management console</a> (Hosted Zones section).  The CloudFormation template you deployed in the Prepare the environment section created this Private Hosted Zone. Click on the name of the Private Hosted Zone, s3.us-east-1.amazonaws.com:</li>
 </ol>
-<p><img alt="hosted zone" src="../../../images/4-onprem/hosted-zone.png?featherlight=false&width=90pc"></p>
+<p><img alt="hosted zone" src="../../../images/5-Workshop/5.4-S3-onprem/hosted-zone.png"></p>
 <ol start="2">
 <li>Create a new record in the Private Hosted Zone:</li>
 </ol>
-<p><img alt="Create record" src="../../../images/4-onprem/create-record1.png?featherlight=false&width=90pc"></p>
+<p><img alt="Create record" src="../../../images/5-Workshop/5.4-S3-onprem/create-record1.png"></p>
 <ul>
 <li>Record name and record type keep default options</li>
 <li>Alias Button: Click to enable</li>
@@ -1039,7 +1039,7 @@
 <li>Region: US East (N. Virginia) [us-east-1]</li>
 <li>Choose endpoint: Paste the Regional VPC Endpoint DNS name from your text editor (you saved when doing section 4.3)</li>
 </ul>
-<p><img alt="record1" src="../../../images/4-onprem/record1.png?featherlight=false&width=90pc"></p>
+<p><img alt="record1" src="../../../images/5-Workshop/5.4-S3-onprem/record1.png"></p>
 <ol start="3">
 <li>Click Add another record, and add a second record using the following values. Click Create records when finished to create both records.</li>
 </ol>
@@ -1051,24 +1051,24 @@
 <li>Region: US East (N. Virginia) [us-east-1]</li>
 <li>Choose endpoint: Paste the Regional VPC Endpoint DNS name from your text editor</li>
 </ul>
-<p><img alt="record 2" src="../../../images/4-onprem/record2.png?featherlight=false&width=90pc"></p>
+<p><img alt="record 2" src="../../../images/5-Workshop/5.4-S3-onprem/record2.png"></p>
 <p>The new records appear in the Route 53 console:</p>
-<p><img alt="result" src="../../../images/4-onprem/result.png?featherlight=false&width=90pc"></p>
+<p><img alt="result" src="../../../images/5-Workshop/5.4-S3-onprem/result.png"></p>
 <h4 id="create-a-resolver-forwarding-rule">Create a Resolver Forwarding Rule</h4>
 <p>Route 53 Resolver Forwarding Rules allow you to forward DNS queries from your VPC to other sources for name resolution. Outside of a workshop environment, you might use this feature to forward DNS queries from your VPC to DNS servers running on-premises. In this section, you will simulate an on-premises conditional forwarder by creating a forwarding rule that forwards DNS queries for Amazon S3 to a Private Hosted Zone running in &ldquo;VPC Cloud&rdquo; in-order to resolve the PrivateLink interface endpoint regional DNS name.</p>
 <ol>
 <li>From the Route 53 management console, click <strong>Inbound endpoints</strong> on the left side bar</li>
 <li>In the Inbound endpoints console, click the ID of the inbound endpoint</li>
 </ol>
-<p><img alt="Inbound endpoint" src="../../../images/4-onprem/route53-1.png?featherlight=false&width=90pc"></p>
+<p><img alt="Inbound endpoint" src="../../../images/5-Workshop/5.4-S3-onprem/route53-1.png"></p>
 <ol start="3">
 <li>Copy the two IP addresses listed to your text editor</li>
 </ol>
-<p><img alt="Ip addresses" src="../../../images/4-onprem/route53-2.png?featherlight=false&width=90pc"></p>
+<p><img alt="Ip addresses" src="../../../images/5-Workshop/5.4-S3-onprem/route53-2.png"></p>
 <ol start="4">
 <li>From the Route 53 menu, choose <strong>Resolver</strong> &gt; <strong>Rules</strong>, and click <strong>Create rule</strong>:</li>
 </ol>
-<p><img alt="Ip addresses" src="../../../images/4-onprem/route53-3.png?featherlight=false&width=90pc"></p>
+<p><img alt="Ip addresses" src="../../../images/5-Workshop/5.4-S3-onprem/route53-3.png"></p>
 <ol start="5">
 <li>In the Create rule console:</li>
 </ol>
@@ -1077,23 +1077,23 @@
 <li>Rule type: Forward</li>
 <li>Domain name: s3.us-east-1.amazonaws.com</li>
 </ul>
-<p><img alt="create rule" src="../../../images/4-onprem/route53-4.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/route53-4.png"></p>
 <ul>
 <li>VPC: VPC On-prem</li>
 <li>Outbound endpoint: VPCOnpremOutboundEndpoint</li>
 </ul>
-<p><img alt="create rule" src="../../../images/4-onprem/route53-5.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/route53-5.png"></p>
 <ul>
 <li>Target IP Addresses: Enter both IP addresses from your text editor (inbound endpoint addresses) and then click Submit</li>
 </ul>
-<p><img alt="create rule" src="../../../images/4-onprem/route53-6.png?featherlight=false&width=90pc"></p>
-<p>You have successfully created resolver forwarding rule.</p>
-<p><img alt="create rule" src="../../../images/4-onprem/route53-7.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/route53-6.png">
+You have successfully created resolver forwarding rule.</p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/route53-7.png"></p>
 <h4 id="test-the-on-premises-dns-simulation">Test the on-premises DNS Simulation</h4>
 <ol>
 <li>Connect to <strong>Test-Interface-Endpoint EC2 instance</strong> with <strong>Session manager</strong></li>
 </ol>
-<p><img alt="create rule" src="../../../images/4-onprem/test1.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/test1.png"></p>
 <ol start="2">
 <li>Test DNS resolution. The dig command will return the IP addresses assigned to the VPC Interface endpoint running in VPC Cloud (your IP&rsquo;s will be different): dig +short s3.us-east-1.amazonaws.com</li>
 </ol>
@@ -1106,20 +1106,20 @@
 
 </div>
 
-<p><img alt="create rule" src="../../../images/4-onprem/dig.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/dig.png"></p>
 <ol start="3">
 <li>Navigate to the VPC menu (Endpoints section), select the S3 Interface endpoint. Click the Subnets tab and verify that the IP addresses returned by Dig match the VPC endpoint:</li>
 </ol>
-<p><img alt="create rule" src="../../../images/4-onprem/subnet.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/subnet.png"></p>
 <ol start="4">
 <li>Return to your shell and use the AWS CLI to test listing your S3 buckets:</li>
 </ol>
 <pre tabindex="0"><code>aws s3 ls --endpoint-url https://s3.us-east-1.amazonaws.com
-</code></pre><p><img alt="create rule" src="../../../images/4-onprem/endpoint.png?featherlight=false&width=90pc"></p>
+</code></pre><p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/endpoint.png"></p>
 <ol start="5">
 <li>Terminate your Session Manager session:</li>
 </ol>
-<p><img alt="create rule" src="../../../images/4-onprem/terminal.png?featherlight=false&width=90pc"></p>
+<p><img alt="create rule" src="../../../images/5-Workshop/5.4-S3-onprem/terminal.png"></p>
 <p>In this section you created an Interface endpoint for Amazon S3. This endpoint can be reached from on-premises through Site-to-Site VPN or AWS Direct Connect. Route 53 Resolver outbound endpoints simulated forwarding DNS requests from on-premises to a Private Hosted Zone running the cloud. Route 53 inbound Endpoints recieved the resolution request and returned a response containing the IP addresses of the VPC interface endpoint. Using DNS to resolve the endpoint IP addresses provides high availability in-case of an Availability Zone outage.</p>
 
 
@@ -1829,19 +1829,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1755105444"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755105444"></script>
-    <script src="../../../js/jquery.sticky.js?1755105444"></script>
-    <script src="../../../js/featherlight.min.js?1755105444"></script>
-    <script src="../../../js/highlight.pack.js?1755105444"></script>
+    <script src="../../../js/clipboard.min.js?1755154973"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1755154973"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1755154973"></script>
+    <script src="../../../js/jquery.sticky.js?1755154973"></script>
+    <script src="../../../js/featherlight.min.js?1755154973"></script>
+    <script src="../../../js/highlight.pack.js?1755154973"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1755105444"></script>
-    <script src="../../../js/learn.js?1755105444"></script>
-    <script src="../../../js/hugo-learn.js?1755105444"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1755154973"></script>
+    <script src="../../../js/learn.js?1755154973"></script>
+    <script src="../../../js/hugo-learn.js?1755154973"></script>
 
-    <link href="../../../mermaid/mermaid.css?1755105444" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1755105444"></script>
+    <link href="../../../mermaid/mermaid.css?1755154973" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1755154973"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

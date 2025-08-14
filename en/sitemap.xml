@@ -266,18 +266,6 @@
                 href="https://thienluhoan.github.io/workshop-template/1-worklog/1.9-week9/"
                 />
   </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
-                />
-  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
@@ -288,6 +276,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://thienluhoan.github.io/workshop-template/5-workshop/5.2-prerequiste/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/2-proposal/</loc>
