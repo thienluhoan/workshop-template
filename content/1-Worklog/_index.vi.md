@@ -1,5 +1,5 @@
 ---
-title: "Worklog"
+title: "Nhật ký công việc"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
