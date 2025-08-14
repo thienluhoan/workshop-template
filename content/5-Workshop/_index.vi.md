@@ -25,9 +25,9 @@ Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gat
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-workshop-overview)
-2. [Chuẩn bị](5.2-prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-s3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-s3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-policy/)
-6. [Dọn dẹp tài nguyên](5.6-cleanup/)
+1. [Tổng quan về workshop](5.1-Workshop-overview/)
+2. [Chuẩn bị](5.2-Prerequiste/)
+3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
+4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
+5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
+6. [Dọn dẹp tài nguyên](5.6-Cleanup/)

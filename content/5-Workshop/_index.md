@@ -23,9 +23,9 @@ You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoi
 
 #### Content
 
-1. [Workshop overview](1-workshop-overview)
-2. [Prerequiste](2-prerequiste/)
-3. [Access S3 from VPC](3-s3-vpc/)
-4. [Access S3 from On-premises](4-s3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5-policy/)
-6. [Clean up](6-cleanup/)
+1. [Workshop overview](5.1-Workshop-overview)
+2. [Prerequiste](5.2-Prerequiste/)
+3. [Access S3 from VPC](5.3-S3-vpc/)
+4. [Access S3 from On-premises](5.4-S3-onprem/)
+5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
+6. [Clean up](5.6-Cleanup/)
