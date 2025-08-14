@@ -1,40 +1,44 @@
 ---
-title: "Báo cáo thực tập"
+title: "Internship Report"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 ---
 
-# Báo cáo thực tập
-### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+    
+# Internship Report
 
-&emsp; **Số điện thoại:** 0989888999 
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% /notice %}}
+
+### Student Information:
+&emsp; **Full Name:** Nguyen Van A
+
+&emsp; **Phone Number:** 0989888999 
 
 &emsp; **Email:** Anguyenvan@gmail.com
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **University:** Ho Chi Minh City University of Technology and Education
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Major:** Information Technology
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Class:** AWS082025
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Vị trí thực tập:** FCJ Cloud Intern
+&emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
-![Ảnh đại diện của bạn](/images/avatar.jpg)
+![Your profile picture](/images/avatar.jpg)
 
-
-
-### Nội dung báo cáo
+### Report Content
 
 1.  [Worklog](1-Worklog/)
 2.  [Proposal](2-Proposal/)
-3.  [Các bài blogs đã dịch](3-BlogsTranslated/)
-4.  [Các events đã tham gia](4-EventParticipated/)
+3.  [Translated Blogs](3-BlogsTranslated/)
+4.  [Events Participated](4-EventParticipated/)
 5.  [Workshop](5-Workshop/)
-6.  [Tự đánh giá](6-Self-evaluation/)
-7.  [Chia sẻ, đóng góp ý kiến](7-Feedback/)
+6.  [Self-evaluation](6-Self-evaluation/)
+7.  [Sharing and Feedback](7-Feedback/)

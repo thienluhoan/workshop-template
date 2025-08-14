@@ -1,13 +1,13 @@
 ---
-title : "Các bước chuẩn bị"
+title : "Prerequiste"
 date :  "`r Sys.Date()`" 
-weight : 2
+weight : 2 
 chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
 #### IAM permissions
-Gắn IAM permission policy sau vào tài khoản aws user của bạn để triển khai và dọn dẹp tài nguyên trong workshop này.
+Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
 ```
 {
     "Version": "2012-10-17",
@@ -216,28 +216,27 @@ Gắn IAM permission policy sau vào tài khoản aws user của bạn để tri
 
 ```
 
-#### Khởi tạo tài nguyên bằng CloudFormation
+#### Provision resources using CloudFormation
 
-Trong lab này, chúng ta sẽ dùng N.Virginia region (us-east-1).
+In this lab, we will use **N.Virginia region (us-east-1)**.
 
-Để chuẩn bị cho môi trường làm workshop, chúng ta deploy CloudFormation template sau (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Để nguyên các lựa chọn mặc định.
+To prepare the workshop environment, deploy this **CloudFormation Template** (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Accept all of the defaults when deploying the template. 
 
 ![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
 
-+ Lựa chọn 2 mục acknowledgement 
-+ Chọn Create stack
++ Tick 2 acknowledgement boxes
++ Choose **Create stack**
 
 ![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
 
-Quá trình triển khai CloudFormation cần khoảng 15 phút để hoàn thành.
+The **ClouddFormation** deployment requires about 15 minutes to complete.
 
 ![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
 
-+ 2 VPCs đã được tạo
++ **2 VPCs** have been created
 
 ![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
 
-+ 3 EC2s đã được tạo
++ **3 EC2s** have been created
 
 ![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
-
