@@ -2,18 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thienluhoan.github.io/workshop-template/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/"
-                />
-  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.1-blog1/</loc>
     <xhtml:link
                 rel="alternate"
@@ -122,6 +110,18 @@
                 href="https://thienluhoan.github.io/workshop-template/4-eventparticipated/4.2-event2/"
                 />
   </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/"
+                />
+  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.1-workshop-overview/</loc>
     <xhtml:link
                 rel="alternate"
@@ -144,18 +144,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
-                />
-  </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/1-worklog/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/1-worklog/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/1-worklog/1.1-week1/</loc>
@@ -266,16 +254,16 @@
                 href="https://thienluhoan.github.io/workshop-template/1-worklog/1.9-week9/"
                 />
   </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.2-prerequiste/</loc>
+    <loc>https://thienluhoan.github.io/workshop-template/1-worklog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.2-prerequiste/"
+                href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/5-workshop/5.2-prerequiste/"
+                href="https://thienluhoan.github.io/workshop-template/1-worklog/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
@@ -288,6 +276,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.2-prerequiste/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.2-prerequiste/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/5-workshop/5.2-prerequiste/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/2-proposal/</loc>
@@ -362,18 +362,6 @@
                 href="https://thienluhoan.github.io/workshop-template/5-workshop/5.3-s3-vpc/"
                 />
   </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/3-blogstranslated/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/3-blogstranslated/"
-                />
-  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/</loc>
     <xhtml:link
                 rel="alternate"
@@ -384,6 +372,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/3-blogstranslated/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/3-blogstranslated/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/</loc>
